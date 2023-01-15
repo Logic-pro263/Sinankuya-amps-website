@@ -6,6 +6,6 @@ from blog import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("/", include("blog.urls")),
+    path("site/", include("blog.urls")),
     path("admin/", admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
