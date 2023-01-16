@@ -3,33 +3,44 @@
 
 {% block title %} Accueil || SINANKUYA TON - AMPS {% endblock %}
 
+
 {% block nav %}
-<nav id="fh5co-menu-wrap" role="navigation">
-	<ul class="sf-menu" id="fh5co-primary-menu">
-		<li class="active">
-			<a href="{% url 'index' %}">Accueil</a>
-		</li>
-		<li><a href="{% url 'a-propos' %}">Qui sommes-nous ?</a></li>
-		<li><a href="{% url 'blog' %}">Blog</a></li>
-		<li><a href="{% url 'contact' %}">Contact</a></li>
-	</ul>
-</nav>
+<!-- start head -->
+		<header id="fh5co-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+					<h1 id="fh5co-logo"><a href="{% url 'index' %}">AMPS</a></h1>
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li class="active">
+								<a href="{% url 'index' %}">Acceuil</a>
+							</li>
+							<li><a href="{% url 'a-propos' %}">Qui sommes-nous ?</a></li>
+							<li><a href="{% url 'blog' %}">Blog</a></li>
+							<li><a href="{% url 'contact' %}">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+<!-- end head -->
 {% endblock %}
 
 {% block content %}
 
 <!--start hero -->
 <div class="fh5co-hero">
-			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url({% static 'assets/images/cover_bg_1.jpg' %});">
-				<div class="desc animate-box">
-					<h2><strong>SINANKUYA</strong> au <strong>MALI</strong></h2>
-					<span>En savoir encore<a href="#" target="_blank" class="fh5co-site-name"> d'avantages</a></span>
-					<span><a class="btn btn-primary btn-lg" href="#">Nous rejoindre</a></span>
-				</div>
-			</div>
-
+	<div class="fh5co-overlay"></div>
+	<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url({% static 'assets/images/cover_bg_2.jpg' %});">
+		<div class="desc animate-box">
+			<h2><strong>SINANKUYA Ton</strong> du <strong>MALI</strong></h2>
+			<span>En savoir encore<a href="{% url 'a-propos' %}" class="fh5co-site-name"> d'avantages</a></span>
+			<span><a class="btn btn-primary btn-lg" href="https://chat.whatsapp.com/BI2SR0XcKLoKGiQbJcDiMe" target="_blank">Nous rejoindre</a></span>
 		</div>
+	</div>
+</div>
 <!--end hero -->
 
 
@@ -44,9 +55,8 @@
 								<i class="icon-profile-male"></i>
 							</span>
 							<div class="feature-copy">
-								<h3>Devenir membre</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-								<p><a href="#">Learn More</a></p>
+								<h3>Recherche de la paix</h3>
+								<p>Renforcer les liens de parenté, l'épanouissement, la consolidation et l'encrage des valeurs de relation à plainsanterie.</p>
 							</div>
 						</div>
 
@@ -58,9 +68,8 @@
 								<i class="icon-happy"></i>
 							</span>
 							<div class="feature-copy">
-								<h3>Activités</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-								<p><a href="#">Learn More</a></p>
+								<h3>La cohésion sociale</h3>
+								<p>Faire valoir en vue d'une vraie sauvegarde nos valeurs culturelles ancestrales dont le <strong>Sinankuya (cousinage et d'autres relations à plainsanterie).</strong>.</p>
 							</div>
 						</div>
 
@@ -72,8 +81,7 @@
 							</span>
 							<div class="feature-copy">
 								<h3>Donation</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-								<p><a href="#">Learn More</a></p>
+								<p>Faites un don à l'Association pour donner visibilté aux actions de l'Association Malienne pour la Promotion du Sinankuya (AMPS).</p>
 							</div>
 						</div>
 					</div>
@@ -87,44 +95,22 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center heading-section">
-						<h3>Evenements culturels.</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<h3>Nos evènements culturels.</h3>
+						<p>La journée culutelle du Sinankuya, le nuit du sinankuya, le festival international du sinankuya, le forum sur le sinankuya assemblée générale, médiation de conflits etc...</p>
 					</div>
 				</div>
 
 				<div class="row row-bottom-padded-md">
 					<div class="col-md-12 text-center animate-box">
-						<p><img src="{% static 'assets/images/cover_bg_2.jpg' %}" alt="image" class="img-responsive"></p>
+						<p><img src="{% static 'assets/images/cover_bg_4.jpg' %}" alt="image" class="img-responsive"></p>
 					</div>
 					<div class="col-md-6 text-center animate-box">
-						<p><img src="{% static 'assets/images/cover_bg_2.jpg' %}" alt="image" class="img-responsive"></p>
+						<p><img src="{% static 'assets/images/cover_bg_6.jpg' %}" alt="image" class="img-responsive"></p>
 					</div>
 					<div class="col-md-6 text-center animate-box">
-						<p><img src="{% static 'assets/images/cover_bg_2.jpg' %}" alt="image" class="img-responsive"></p>
+						<p><img src="{% static 'assets/images/cover_bg_7.jpg' %}" alt="image" class="img-responsive"></p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="feature-text">
-							<h3>Love</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-text">
-							<h3>Compassion</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-text">
-							<h3>Charity</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-				</div>
-
-
 			</div>
 		</div>
 <!-- end our domain -->
@@ -134,9 +120,9 @@
 			<div class="container">
 
 				<div class="row">
-					<div class="col-md-6 col-md-offset-3 text-center heading-section animate-box">
-						<h3>Notre Galerie</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+					<div class="col-md-12 text-center heading-section animate-box">
+						<h3>Galerie photos</h3>
+						<p>Les images de quelques activités culturelles de l' <strong>AMPS</strong> telques : la journée culutelle du Sinankuya, médiation de conflits etc... tenues dans plusieurs régions du Mali.</p>
 					</div>
 				</div>
 
@@ -148,33 +134,33 @@
 							<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url({% static 'assets/images/cover_bg_1.jpg' %}); ">
 								<a href="#" class="color-3">
 									<div class="case-studies-summary">
-										<span>Give Love</span>
+										<span>Banderole</span>
 										<h2>Donation is caring</h2>
 									</div>
 								</a>
 							</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url({% static 'assets/images/cover_bg_2.jpg' %}); ">
+							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url({% static 'assets/images/cover_bg_11.jpg' %}); ">
 								<a href="#" class="color-4">
 									<div class="case-studies-summary">
-										<span>Give Love</span>
+										<span>Femmes</span>
 										<h2>Donation is caring</h2>
 									</div>
 								</a>
 							</li>
 
-							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url({% static 'assets/images/cover_bg_1.jpg' %}); ">
+							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url({% static 'assets/images/cover_bg_17.jpg' %}); ">
 								<a href="#" class="color-5">
 									<div class="case-studies-summary">
-										<span>Give Love</span>
+										<span>Prise de parole</span>
 										<h2>Donation is caring</h2>
 									</div>
 								</a>
 							</li>
-							<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url({% static 'assets/images/cover_bg_2.jpg' %}); ">
+							<li class="two-third animate-box" data-animate-effect="fadeIn" style="background-image: url({% static 'assets/images/cover_bg_10.jpg' %}); ">
 								<a href="#" class="color-6">
 									<div class="case-studies-summary">
-										<span>Give Love</span>
+										<span>Sketch</span>
 										<h2>Donation is caring</h2>
 									</div>
 								</a>
@@ -182,13 +168,6 @@
 						</ul>
 					</div>
 				</div>
-
-				<div class="row">
-					<div class="col-md-4 col-md-offset-4 text-center animate-box">
-						<a href="#" class="btn btn-primary btn-lg">Voir plus de photos</a>
-					</div>
-				</div>
-
 
 			</div>
 		</div>
@@ -199,8 +178,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>Notre Equipe</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+						<h3>Commentaires</h3>
+						<p>Commentaires de quelques membre de notre association</p>
 					</div>
 				</div>
 			</div>
@@ -209,12 +188,12 @@
 					<div class="col-md-4">
 						<div class="fh5co-testimonial text-center animate-box">
 							<figure>
-								<img src="images/person_1.jpg" alt="user">
+								<img src="{% static 'assets/images/person_1.jpg' %}" alt="user">
 							</figure>
 							<blockquote>
 								<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
 							</blockquote>
-							<span>Jean Doe, XYZ Co.</span>
+							<span>Lancéni Bella KEITA. <br>Ancien Ministre du Mali <br><strong>Membre d'Honneur</strong></span>
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -225,7 +204,7 @@
 							<blockquote>
 								<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
 							</blockquote>
-							<span>John Doe, XYZ Co.</span>
+							<span>Bakary S. DIARRA. <br>Sécrétaire Général de l'AMPS <br><strong>Membre</strong></span>
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -236,7 +215,7 @@
 							<blockquote>
 								<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.&rdquo;</p>
 							</blockquote>
-							<span>John Doe, XYZ Co.</span>
+							<span>Mme KONE Djenebou KEITA. <br>Commerçante <br><strong>Membre d'Honneur</strong></span>
 						</div>
 					</div>
 				</div>
@@ -249,8 +228,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>Nos Projects et Supporteurs</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+						<h3>Nos Projets</h3>
+						<p>.</p>
 					</div>
 				</div>
 			</div>
@@ -259,43 +238,22 @@
 					<div class="col-md-4 col-sm-4">
 						<div class="services animate-box">
 							<span><i class="icon-heart"></i></span>
-							<h3>Water Project In Kenya</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3>Reconciliation</h3>
+							<p>L'AMPS se donne pour mission de réconcilier les communautés fragilisées pour les crises multidimensionnelles.</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4">
 						<div class="services animate-box">
-							<span><i class="icon-heart"></i></span>
-							<h3>Shelter Giving</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<span><i class="icon-pencil"></i></span>
+							<h3>Formation</h3>
+							<p>L'AMPS organise des séance de formation à l'endroit des jeunes et des femmes au cours de la ténue de chaque activité culturelle.</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4">
 						<div class="services animate-box">
-							<span><i class="icon-heart"></i></span>
-							<h3>Shelter Giving</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="services animate-box">
-							<span><i class="icon-heart"></i></span>
-							<h3>Water Project In Kenya</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="services animate-box">
-							<span><i class="icon-heart"></i></span>
-							<h3>Water Project In Kenya</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4">
-						<div class="services animate-box">
-							<span><i class="icon-heart"></i></span>
-							<h3>Midical Mission</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<span><i class="icon-bubbles4"></i></span>
+							<h3>Partenariat</h3>
+							<p>L'AMPS se veut un partenariat avec toutes les bonnes volontés qui œuvre à la paix, la cohésion sociale et la réconciliation.</p>
 						</div>
 					</div>
 				</div>
@@ -309,7 +267,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
 						<h3>Articles de blog recents</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+						<p>Quelques articles récents plubiés sur notre blog.</p>
 					</div>
 				</div>
 			</div>
@@ -324,7 +282,7 @@
 									<span class="posted_by">Sep. 15th</span>
 									<span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<p><a href="#">Learn More...</a></p>
+									<p><a href="#">Continuer la lecture...</a></p>
 								</div>
 							</div>
 						</div>
@@ -338,7 +296,7 @@
 									<span class="posted_by">Sep. 15th</span>
 									<span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<p><a href="#">Learn More...</a></p>
+									<p><a href="#">Continuer la lecture...</a></p>
 								</div>
 							</div>
 						</div>
@@ -353,7 +311,7 @@
 									<span class="posted_by">Sep. 15th</span>
 									<span class="comment"><a href="">21<i class="icon-bubble2"></i></a></span>
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-									<p><a href="#">Learn More...</a></p>
+									<p><a href="#">Continuer la lecture...</a></p>
 								</div>
 							</div>
 						</div>
@@ -363,7 +321,7 @@
 
 				<div class="row">
 					<div class="col-md-4 col-md-offset-4 text-center animate-box">
-						<a href="#" class="btn btn-primary btn-lg">Notre Blog</a>
+						<a href="{% url 'blog' %}" class="btn btn-primary btn-lg">Notre Blog</a>
 					</div>
 				</div>
 

@@ -14,7 +14,8 @@
     <style>
     .head{
       background-color: #ff5722;
-    }
+      }
+
     </style>
   </head>
   <body>
@@ -43,33 +44,38 @@
     </div>
   </header>
     <div class="container">
-      <div class="center mt-5">
-        <h2 class="text-center m-5">Listes des articles et commentaires du site</h2>
-        <div class="float-end"><a class="btn btn-primary mb-5" href="{% url 'add-post' %}">Ajouter un article</a></div>
-        <table class="table">
-  <thead>
-    <tr class="text-center">
-      <th scope="col">#</th>
-      <th scope="col">Date d'ajout</th>
-      <th scope="col">Titres</th>
-      <th scope="col">Contenues</th>
-      <th scope="col">Nbre de commentaires</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% for post in posts %}
-    <tr class="text-center">
-      <th scope="row">{{ forloop.counter }}</th>
-      <td>post.created_at</td>
-      <td>post.title</td>
-      <td>post.content</td>
-      <td>post.comment.count()</td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
-      </div>
+    <div class="post-form">
+        <h2 class="text-center">Nouveau article</h2>
+            {% if form.errors %}
+            <div class="alert alert-danger" role="alert">{{form.errors}}</div>
+            {% endif %}
+
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="col-md-12">
+                <div class="form-group">
+                <label>Titre:</label>
+                {{form.title}}
+                </div>
+            </div>
+            <div class="col-md-12 mt-3">
+                <div class="form-group">
+                <label>Article:</label>
+                {{form.content}}
+                </div>
+            </div>
+            <div class="col-md-12 mt-3">
+                <div class="form-group">
+                <label>Image:</label>
+                {{form.image}}
+                </div>
+            </div>
+            <div class="col-md-12 text-center mt-5">
+                <button class="btn btn-primary" type="button">Poster un article</button>
+            </div>
+        </form>
     </div>
+</div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -82,3 +88,6 @@
     -->
   </body>
 </html>
+
+
+

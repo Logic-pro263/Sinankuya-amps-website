@@ -3,92 +3,105 @@
 
 {% block title %} Qui sommes-nous? | SINANKUYA - AMPS {% endblock %}
 
+{% block style %}
+<style>
+	.story span {
+		color: #ff5722;
+		font-style: italic;
+	}
+	.last-text{
+		color:#ff5722;
+		font-size: 1.6em;
+	}
+</style>
+
+{% endblock%}
 
 {% block nav %}
-<nav id="fh5co-menu-wrap" role="navigation">
-	<ul class="sf-menu" id="fh5co-primary-menu">
-		<li>
-			<a href="{% url 'index' %}">Accueil</a>
-		</li>
-		<li class="active"><a href="{% url 'a-propos' %}">Qui sommes-nous ?</a></li>
-		<li><a href="{% url 'blog' %}">Blog</a></li>
-		<li><a href="{% url 'contact' %}">Contact</a></li>
-	</ul>
-</nav>
+<!-- start head -->
+		<header id="fh5co-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+					<h1 id="fh5co-logo"><a href="{% url 'index' %}">AMPS</a></h1>
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li>
+								<a href="{% url 'index' %}">Acceuil</a>
+							</li>
+							<li class="active"><a href="{% url 'a-propos' %}">Qui sommes-nous ?</a></li>
+							<li><a href="{% url 'blog' %}">Blog</a></li>
+							<li><a href="{% url 'contact' %}">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+<!-- end head -->
 {% endblock %}
+
 
 {% block content %}
 <div class="fh5co-hero">
-			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url({% static 'assets/images/cover_bg_3.jpg' %});">
-				<div class="desc animate-box">
-					<h2>We Are <strong>Non-profit</strong></h2>
-					<span>HandCrafted by <a href="http://frehtml5.co/" target="_blank" class="fh5co-site-name">FreeHTML5.co</a></span>
-				</div>
-			</div>
-
+	<div class="fh5co-overlay"></div>
+	<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url({% static 'assets/images/cover_bg_3.jpg' %});">
+		<div class="desc animate-box">
+			<h2><strong>Historique</strong> du <strong>Sinankuya</strong></h2>
+			<span>C'est quoi le Sinankuya ?</span>
 		</div>
+	</div>
 
-		<div id="fh5co-feature-product" class="fh5co-section-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center heading-section">
-						<h3>How we started.</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					</div>
-				</div>
-
-				<div class="row row-bottom-padded-md">
-					<div class="col-md-12 text-center animate-box">
-						<p><img src="images/cover_bg_1.jpg" alt="Free HTML5 Bootstrap Template" class="img-responsive"></p>
-					</div>
-					<div class="col-md-6 text-center animate-box">
-						<p><img src="images/cover_bg_2.jpg" alt="Free HTML5 Bootstrap Template" class="img-responsive"></p>
-					</div>
-					<div class="col-md-6 text-center animate-box">
-						<p><img src="images/cover_bg_3.jpg" alt="Free HTML5 Bootstrap Template" class="img-responsive"></p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="feature-text">
-							<h3>Love</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-text">
-							<h3>Compassion</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="feature-text">
-							<h3>Charity</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-						</div>
-					</div>
-				</div>
-
-
+</div>
+<div id="fh5co-feature-product" class="fh5co-section-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12  heading-section story">
+				<h3>SINANKUYA ou SANANKOUYA: (Les Relations à Plaisanterie)</h3>
+				<p> <span></span>
+						   Le <span>« sanankouya » « parenté à plaisanterie »</span> (appelée aussi cousinage à plaisanterie) est un système de solidarité inter-ethnique et inter-clanique très répandu en <span>Afrique de l’Ouest</span>, surtout au <span>Mali</span>. Il ne repose pas sur une parenté réelle entre alliés à la différence de la <span>« parenté à plaisanterie »</span> qui concerne des personnes ayant des liens de parenté avérés.
+					       La manifestation la plus remarquable du sanankouya réside dans les échanges de plaisanteries entre alliés. Les propos souvent injurieux qu’échangent à toute occasion les partenaires ne peuvent donner lieu à aucune conséquence. Mais au-delà de cet aspect ludique, l’alliance requiert une assistance mutuelle entre alliés <span>(sanankoun)</span> en toutes circonstances, un devoir, voire une obligation
+					       de médiation lorsque l’un des partenaires est en conflit avec un tiers. De nombreuses études consacrées à ce phénomène typique des sociétés ouest-africaines ont donné lieu à des interprétations différentes quant à ses origines et à sa signification. Certains de nos chercheurs africains comme <span>Djéli Bakoroba Diabaté</span> et <span>Mamady Keïta </span>du <span>mouvement culturelle N’ko</span>,
+					       et aussi des chercheurs occidentaux comme  <span>M. Griaule</span> et <span>V. Pâques</span> l’ont interprété comme étant une <span>« alliance cathartique avec fonction purificatrice »</span> reposant au départ sur un serment qui scellait un pacte de fraternisation. L’alliance engage donc les contractants et leurs descendants. Elle unit des groupes portant des patronymes différents et qui se repartissent
+						   entre différentes ethnies vivant dans différents pays de l’Afrique de l’Ouest comme le Mali. On peut citer ainsi les alliances <span>Diarra-Traoré-Konè-Dembélé</span> ; <span>Keïta-Doumbia-Coulibaly </span>; <span>Touré-Maïga-Cissé-Diaby</span> ; <span>Bathily-Fofana-Camara-Soumaré.</span>
+						   Le sanankouya (appelé <span>Mangu</span> chez les Dogons) peut avoir un caractère inter-ethnique <span>(Mandingue-Peulh, Bamanan-Peulh, Sonrhai-Dogon, Dogon-Bozo, Tamasheq-Dogon, Soninké-Manding, Djawambé-Kakôlô,  Minianka-Sénoufo, etc.)</span>... L’alliance peut unir aussi des groupes ethniques à des castes <span>(Peulhs-Forgerons)</span> ou des castes entre elles <span>(forgerons-autres castes)</span>
+					       ou encore des contrées entre elles dans la mesure où celles-ci ont un peuplement relativement homogène. Quant aux fonctions du sanankouya, <span>Sory Camara</span> (qui a entrepris une étude des différents aspects de l’alliance) retient que celle-ci, à travers les échanges verbaux à caractères irrévérencieux entre alliés, « permet de canaliser les tensions éprouvées dans les rapports de parenté clanique et
+					   	   avec les alliés matrimoniaux ». En effet le sanankouya établit une relation pacificatrice qui joue le rôle d’exutoire de tensions qui autrement dégénéreraient en violences. Comme l’écrit fort justement <span>Sory Camara</span> <strong>« il s’agit de désamorcer la guerre, de la jouer pour ne pas la faire »</strong>. Ainsi le sanankouya permet aux africains de l’ouest de différentes contrées de fraterniser au premier contact,
+						   de dédramatiser des situations qui ailleurs conduiraient à des conflits ouverts.
+					       Au Mali, le sanankouya agit comme une thérapeutique qui participe quotidiennement à la régulation sociale.
+						   Les plaisanteries qu’échangent les alliés contribuent à détendre l’atmosphère, à rétablir la confiance, toutes choses indispensables au dialogue.
+					       Quand un Bozo et un Dogon entretiennent des propos très libres, on dit qu'ils le font parce qu'ils sont « cousins » : mangu. Cette relation est nommée en d'autres milieux par des termes renvoyant soit à un lien de sang de parenté, en l'occurrence le « cousinage » (dendiraagu en foulfouldé, baaseterey en songoi, tububusha en tamasheq), soit à un pacte (yaraga chez les Minyanka, bariro ou ciabari en bwa, tursènè en dafing, zinkuntè en senoufo et sinankouya en bamanan).
+						   La ou le sinankuya évoque une alliance entre des individus sous la protection du « djo » (force positive quand le serment est respecté, et négative quand il est transgressé). Le mangu (en dogon) qui existe entre consanguins et alliés est sacré ou profane selon les circonstances, les lieux et les acteurs impliqués dans la production et la consommation de « discours plaisants ». En ville et a fortiori dans la capitale, ces discours à plaisanterie sont proférés
+						   dans certaines circonstances de la vie politique malienne dans le but de bénéficier des faveurs de la masse.
+				 		   Le Sinankouya est un amortisseur social.
+						   C’est pour cela qu’en tant que <span>première organisation</span> créée au <span>Mali en Mars 2006</span> pour la promotion et la sauvegarde de cette valeur ancestrale, l’<span>A</span>ssociation <span>M</span>alienne pour la <span>P</span>romotion du <span>S</span>inankuya (AMPS) a trouvé un cadre de fédération de toutes les organisations autour des relations à plaisanterie à travers le Festival international du <span>SINANKUYA</span> (FIS) dont la 1ère édition a eu lieu <span>du 01er au 04 Avril 2016 à Siby</span>
+						   dans le Mandé (cercle de Kati), <span>la 2ème édition tenue du 14 au 16 Avril 2017 </span>à Bamako sur la place du Cinquantenaire, <span>la 3ème édition du 09 au 11 Mars à Yanfolila (Wassoulou)</span> et <span>la 4ème édition à Siby du 29 au 31 Mars 2019</span>. <span>La 5ème Edition du Festival international du SINANKUYA (FIS 2020) a eu lieu du jeudi 05 au dimanche 08 Mars 2020 à KATI.</span> <span>La 6ème édition est cours depuis le mois de Mars dans 10 communes du Mali,  et prendra fin en juillet 2021.</span>
+					 	   Ce riche rendez-vous culturel se caractérise par des causeries, conférences débats, des échanges, des face à face entre les sinankouns de différentes communautés, des manifestations folkloriques, des concerts géants, des visites touristiques, des jeux concours et des  activités sportives.
+				</p>
 			</div>
 		</div>
-
-
-		<div id="fh5co-portfolio">
-			<div class="container">
-			<iframe  width="100%" height="544" src="https://www.youtube.com/embed/yUtUHfwHI9I" frameborder="0" allowfullscreen></iframe>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<p class="last-text">Vive le « Festival international du Sinankuya » pour le bon vivre ensemble.</p>
 			</div>
 		</div>
+	</div>
+</div>
 
+<!-- start video Youtube -->
+<div id="fh5co-portfolio">
+	<div class="container">
+	<iframe  width="100%" height="544" src="https://www.youtube.com/embed/yUtUHfwHI9I" frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>
+<!-- end video Youtube -->
 
-
-		<div id="fh5co-content-section" class="fh5co-section-gray">
+<div id="fh5co-content-section" class="fh5co-section-gray">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-						<h3>Leadership</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
+						<h3>Team</h3>
+						<p>Quelques membres de Sinankuya Ton.</p>
 					</div>
 				</div>
 			</div>
@@ -101,14 +114,12 @@
 							</figure>
 
 							<div>
-								<h3>Jean Doe</h3>
-								<p><span>Founder</span></p>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<h3>Sekou Sirama DIARRA</h3>
+								<p><span>Président</span></p>
 							</div>
 
 							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-linkedin2"></i></a>
+								<a href="#"><i class="icon-whatsapp"></i></a>
 								<a href="#"><i class="icon-facebook3"></i></a>
 							</p>
 						</div>
@@ -119,13 +130,11 @@
 								<img src="images/person_2.jpg" alt="user">
 							</figure>
 							<div>
-								<h3>John Doe</h3>
-								<p><span>Founder</span></p>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<h3>Bakary S. DIARRA</h3>
+								<p><span>Secrétaire Général</span></p>
 							</div>
 							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-linkedin2"></i></a>
+								<a href="#"><i class="icon-whatsapp"></i></a>
 								<a href="#"><i class="icon-facebook3"></i></a>
 							</p>
 						</div>
@@ -136,13 +145,11 @@
 								<img src="images/person_3.jpg" alt="user">
 							</figure>
 							<div>
-								<h3>John Doe</h3>
-								<p><span>Founder</span></p>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+								<h3>Alou TOGOLA</h3>
+								<p><span>Secrétaire Administratif</span></p>
 							</div>
 							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter2"></i></a>
-								<a href="#"><i class="icon-linkedin2"></i></a>
+								<a href="#"><i class="icon-whatsapp"></i></a>
 								<a href="#"><i class="icon-facebook3"></i></a>
 							</p>
 						</div>
@@ -150,6 +157,4 @@
 				</div>
 			</div>
 		</div>
-
-
 {% endblock %}

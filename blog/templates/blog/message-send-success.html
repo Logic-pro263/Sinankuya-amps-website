@@ -1,0 +1,32 @@
+{% extends "partials/base.html" %}}
+
+{% block title %} Envoi de message reussi {% endblock %}
+
+{% block style %}
+<style>
+  .success-message{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row success-message ">
+    <div class="col-md-12 text-center">
+      <div class="alert alert-success">
+        {{success}}
+      </div>
+      <div>
+      <a class="btn btn-success" href="{% url 'index' %}">Revenir au site !</a>
+   </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

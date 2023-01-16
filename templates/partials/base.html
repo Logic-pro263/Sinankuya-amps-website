@@ -1,17 +1,20 @@
+
 <!DOCTYPE html>
 {% load static %}
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{% block title %} {% endblock %}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Association Sinankuya ton" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FREEHTML5.CO" />
+	<meta name="description" content="Association Malienne Pour la Promotion du Sinankuya (AMPS)." />
+	<meta name="keywords" content="Association Sinankuya Groupe Mali" />
+	<meta name="author" content="le_dev_du_coin_223" />
+
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -30,14 +33,14 @@
 	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'> -->
 
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/animate.css'%}">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="{% static 'assets/css/icomoon.css' %}">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
 	<!-- Superfish -->
 	<link rel="stylesheet" href="{% static 'assets/css/superfish.css' %}">
-
+	<!-- custom style -->
 	<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
 
 
@@ -48,85 +51,67 @@
 	<script src="{% static 'assets/js/respond.min.js' %}"></script>
 	<![endif]-->
 
+		{% block style %} {% endblock %}
+
 	</head>
 	<body>
-        <!--  start header -->
+		<!-- start fh5co -->
 		<div id="fh5co-wrapper">
+		<!-- start fh5co-page -->
 		<div id="fh5co-page">
 		<div class="header-top">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-sm-6 text-left fh5co-link">
 						<a href="#">FAQ</a>
-						<a href="#">Forum</a>
-						<a href="#">Contact</a>
+						<a href="{% url 'contact' %}">Contact</a>
 					</div>
 					<div class="col-md-6 col-sm-6 text-right fh5co-social">
 						<a href="#" class="grow"><i class="icon-facebook2"></i></a>
-						<a href="#" class="grow"><i class="icon-twitter2"></i></a>
+						<a target="_blank" href="https://chat.whatsapp.com/BI2SR0XcKLoKGiQbJcDiMe" class="grow"><i class="icon-whatsapp"></i></a>
 						<a href="#" class="grow"><i class="icon-instagram2"></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<header id="fh5co-header-section" class="sticky-banner">
-			<div class="container">
-				<div class="nav-header">
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="{%url 'index' %}}">AMPS</a></h1>
 
+		{% block nav %} {% endblock %}
 
-{% block nav %}
-<nav id="fh5co-menu-wrap" role="navigation">
-	<ul class="sf-menu" id="fh5co-primary-menu">
-		<li>
-			<a href="{% url 'index' %}">Accueil</a>
-		</li>
-		<li><a href="{% url 'a-propos' %}">Qui sommes-nous ?</a></li>
-		<li class="active"><a href="{% url 'blog' %}">Blog</a></li>
-		<li><a href="{% url 'contact' %}">Contact</a></li>
-	</ul>
-</nav>
-{% endblock %}
+		{% block content %}
 
-				</div>
-			</div>
-		</header>
-		<!--  end header -->
-    {% block content %}
+		{% endblock %}
 
-    {% endblock %}
-            <!-- start footer -->
-            	<footer>
+		<footer>
 			<div id="footer">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 text-center">
 							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter2"></i></a>
 								<a href="#"><i class="icon-facebook2"></i></a>
 								<a href="#"><i class="icon-instagram"></i></a>
-								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a target="_blank" href="https://chat.whatsapp.com/BI2SR0XcKLoKGiQbJcDiMe"><i class="icon-whatsapp"></i></a>
 								<a href="#"><i class="icon-youtube"></i></a>
 							</p>
-							<p>Copyright &copy; 2023 <a href="#">Sinankuya-amps</a>. Tous droits reservés.</p>
+							<p>Copyright &copy; 2023 Tous Droits Reservés. </p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-    <!-- start footer -->
-	</div>
+
 
 	</div>
+	<!-- end fh5co-page -->
+
+	</div>
+	<!-- end fh5co-wrapper -->
 
 	<!-- jQuery -->
-
 	<script src="{% static 'assets/js/jquery.min.js' %}"></script>
 	<!-- jQuery Easing -->
 	<script src="{% static 'assets/js/jquery.easing.1.3.js' %}"></script>
 	<!-- Bootstrap -->
-	<script src="{% static 'assets/js/bootstrap.min.js'  %}"></script>
+	<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
 	<!-- Waypoints -->
 	<script src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
 	<script src="{% static 'assets/js/sticky.js' %}"></script>
@@ -136,7 +121,6 @@
 	<!-- Superfish -->
 	<script src="{% static 'assets/js/hoverIntent.js' %}"></script>
 	<script src="{% static 'assets/js/superfish.js' %}"></script>
-
 	<!-- Main JS -->
 	<script src="{% static 'assets/js/main.js' %}"></script>
 
