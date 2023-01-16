@@ -1,0 +1,1 @@
+web: gunicorn amps.wsgi --log-file -
