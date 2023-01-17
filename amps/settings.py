@@ -67,11 +67,11 @@ WSGI_APPLICATION = "amps.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "amps",
-        "USER": "malikadigitalsolutions",
-        "PASSWORD": "",
-        "HOST": "0.0.0.0",
-        "PORT": "$PORT",
+        "NAME": "railway",
+        "USER": "postgres",
+        "PASSWORD": "1AuwOpIv3TqOQdZ9rpjD",
+        "HOST": "containers-us-west-131.railway.app",
+        "PORT": "7278",
     }
 }
 
