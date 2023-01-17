@@ -71,7 +71,7 @@ DATABASES = {
         "USER": "malikadigitalsolutions",
         "PASSWORD": "",
         "HOST": "0.0.0.0",
-        "PORT": "5432",
+        "PORT": "$PORT",
     }
 }
 
